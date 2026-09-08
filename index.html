@@ -19,15 +19,20 @@
         </div>
     </nav>
 
-    <div class="container">
-        <span class="overline">NEMSU Information Office • 325 Hours</span>
-        <h1 class="designer-heading">Designing the<br>Information Flow.</h1>
-        <p class="lead-text">A comprehensive look into my practicum as a Computer Science student, navigating the intersections of technology, multimedia, and corporate communications.</p>
+    <!-- Flexbox applied to container to split text left and image right -->
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 4rem;">
         
-        <div style="display: flex; gap: 2rem; align-items: center; margin-top: 2rem;">
+        <div class="hero-text" style="flex: 1;">
+            <span class="overline">NEMSU Information Office • 324 Hours</span>
+            <h1 class="designer-heading">Designing the<br>Information Flow.</h1>
+            <p class="lead-text" style="margin-bottom: 2rem;">A comprehensive look into my practicum as a Computer Science student, navigating the intersections of technology, multimedia, and corporate communications.</p>
             <a href="experience.html" class="btn">Read the Report</a>
-            <img src="Gemini_Generated_Image_6r0pe6r0pe6r0pe6.png" alt="Bert Lagare" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; box-shadow: -5px 5px 0px rgba(31, 58, 46, 0.1);">
         </div>
+
+        <div class="hero-image" style="flex: 1; display: flex; justify-content: center;">
+            <img src="Gemini_Generated_Image_6r0pe6r0pe6r0pe6.png" alt="Bert Lagare" style="width: 450px; height: 450px; border-radius: 50%; object-fit: cover; box-shadow: -15px 15px 0px rgba(31, 58, 46, 0.1);">
+        </div>
+
     </div>
 
     <footer>
