@@ -178,6 +178,11 @@ footer {
 
 @media (max-width: 768px) {
     /* Stack side-by-side containers vertically */
+
+    .masonry-grid {
+        column-count: 1 !important;
+    }
+    
     .container {
         padding: 3rem 5%;
     }
