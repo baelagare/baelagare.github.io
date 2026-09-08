@@ -175,3 +175,52 @@ footer {
     border-top: 1px solid rgba(31, 58, 46, 0.1);
     margin-top: 4rem;
 }
+
+@media (max-width: 768px) {
+    /* Stack side-by-side containers vertically */
+    .container {
+        padding: 3rem 5%;
+    }
+    
+    div[style*="display: flex"] {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 2rem !important;
+    }
+
+    /* Scale down giant desktop headings for mobile screens */
+    .designer-heading {
+        font-size: 2.5rem !important;
+    }
+
+    /* Shrink the portrait image to fit mobile viewports cleanly */
+    .hero-image img, 
+    div[style*="flex: 1"] img {
+        width: 260px !important;
+        height: 260px !important;
+    }
+
+    /* Collapse multi-column text layouts into a single stack */
+    .split-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    /* Wrap navigation elements neatly */
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem 5%;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        margin: 0.25rem 0.75rem;
+        font-size: 0.85rem;
+    }
+}
