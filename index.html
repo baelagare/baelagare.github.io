@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My OJT Experience | Bert Lagare</title>
+    <!-- Import Google Fonts to match portfolio -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-cream: #F9F9F6;
+            --primary-green: #1F3A2E;
+            --text-dark: #333333;
+            --text-gray: #555555;
+            --font-serif: 'Playfair Display', serif;
+            --font-sans: 'Montserrat', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+        }
+
+        /* Navigation mimicking your portfolio */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            border-bottom: 1px solid rgba(31, 58, 46, 0.1);
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5rem 10%;
+            gap: 4rem;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .overline {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-serif);
+            color: var(--primary-green);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0 0 1.5rem 0;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px; /* Pill shape */
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Circular Masked Image */
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 50%; /* Creates the circle */
+            box-shadow: -15px 15px 0px rgba(31, 58, 46, 0.1);
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 4rem 10%;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .content-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            margin-bottom: 2rem;
+        }
+
+        /* Grid for Accomplishments */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .grid-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border-top: 4px solid var(--primary-green);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">Bert Lagare</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">The Experience</a>
+            <a href="#accomplishments">Accomplishments</a>
+            <a href="#reflection">Reflection</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="overline">NEMSU Administration - Information Office</div>
+            <h1>My OJT Experience</h1>
+            <p>A comprehensive look into my 325-hour practicum as a Computer Science student, navigating the intersections of technology, multimedia, and corporate communications.</p>
+            <a href="#about" class="btn">Read the Report</a>
+        </div>
+        <div class="hero-image">
+            <img src="Gemini_Generated_Image_6r0pe6r0pe6r0pe6.png" alt="Bert Lagare Professional Headshot">
+        </div>
+    </section>
+
+    <!-- Introduction Section pulled from Narrative Report -->
+    <section class="section" id="about">
+        <h2>Stepping Out of the Code</h2>
+        <div class="content-card">
+            <p>On-the-Job Training (OJT) provides students with the opportunity to apply the knowledge and skills they have gained in the classroom to an actual workplace[cite: 1]. My internship experience at the Information Office gave me a different perspective from what I initially expected as a Computer Science student[cite: 1].</p>
+            <p>Although I was assigned primarily to multimedia-related tasks, the experience allowed me to develop skills in handling, organizing, presenting, and communicating information while also learning how these tasks are approached in a professional and organizational setting[cite: 1].</p>
+        </div>
+    </section>
+
+    <!-- Highlights/Accomplishments Grid -->
+    <section class="section" id="accomplishments">
+        <h2>Key Responsibilities & Projects</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <h3 style="margin-top: 0;">Multimedia & Graphic Design</h3>
+                <p>Redesigned NEMSULTI graphic materials, including event invitations, virtual backgrounds, and certificates[cite: 1]. Created public information materials for the 5th NEMSU Day and Buwan ng Wika[cite: 1].</p>
+            </div>
+            <div class="grid-item">
+                <h3 style="margin-top: 0;">Technical Support & Web</h3>
+                <p>Reviewed and evaluated the official NEMSU website, identifying areas of improvement, and attended development meetings[cite: 1]. Assisted neighboring offices, like the Records Office and CAO-Admin, with hardware setups and technical troubleshooting[cite: 1].</p>
+            </div>
+            <div class="grid-item">
+                <h3 style="margin-top: 0;">Video Production</h3>
+                <p>Edited highlight videos for the welcoming of Commissioner Ricmar P. Aquino and the 8th NEMSULTI[cite: 1]. Filmed and edited video messages for the AACUP Accreditation Survey Visits[cite: 1].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section class="section" id="reflection">
+        <h2>Final Reflection</h2>
+        <div class="content-card">
+            <p>My On-the-Job Training experience has been one of the most unexpected but meaningful parts of my journey as a BS in Computer Science student[cite: 1]. Working in the Information Office gave me a better understanding of how data and information are handled, organized, and presented from a professional perspective[cite: 1].</p>
+            <p>These experiences helped me become more adaptable, confident, and prepared to handle unfamiliar tasks and challenges. The lessons, challenges, and experiences I gained helped me recognize both my strengths and the areas where I still need to improve[cite: 1].</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>This OJT Narrative Report site was designed by Bert Angelou Lagare.</p>
+    </footer>
+
+</body>
+</html>
