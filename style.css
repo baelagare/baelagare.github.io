@@ -1,0 +1,176 @@
+:root {
+    --bg-cream: #F9F9F6;
+    --primary-green: #1F3A2E;
+    --text-dark: #333333;
+    --text-gray: #555555;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Montserrat', sans-serif;
+}
+
+/* Global Reset & Typography */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-serif); color: var(--primary-green); }
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: var(--bg-cream);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(31, 58, 46, 0.1);
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin-left: 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-green);
+    font-weight: 700;
+}
+
+/* UI Components */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-green);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(31, 58, 46, 0.2);
+}
+
+/* Page Layouts */
+.container {
+    padding: 5rem 10%;
+    max-width: 1400px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Typography Elements for Graphic Design Feel */
+.designer-heading {
+    font-size: clamp(3rem, 5vw, 6rem);
+    line-height: 1;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+}
+
+.overline {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.lead-text {
+    font-size: 1.25rem;
+    color: var(--text-gray);
+    max-width: 700px;
+    margin-bottom: 3rem;
+}
+
+/* Documentation / Masonry Grid */
+.masonry-grid {
+    column-count: 3;
+    column-gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.4s ease;
+}
+
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.masonry-item:hover {
+    transform: scale(1.02);
+}
+
+.masonry-item:hover img {
+    transform: scale(1.05);
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(31, 58, 46, 0.9));
+    color: white;
+    padding: 1.5rem 1rem 1rem;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.masonry-item:hover .caption {
+    opacity: 1;
+}
+
+/* Two-Column Text Layout (for reading pages) */
+.split-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 10%;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(31, 58, 46, 0.1);
+    margin-top: 4rem;
+}
