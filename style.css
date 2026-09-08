@@ -14,7 +14,8 @@ body {
     color: var(--text-dark);
     font-family: var(--font-sans);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Ensures no side clipping or horizontal scroll */
+    width: 100%;
 }
 
 h1, h2, h3, h4 { font-family: var(--font-serif); color: var(--primary-green); }
@@ -74,7 +75,7 @@ nav {
 
 /* Page Layouts */
 .container {
-    padding: 5rem 10%;
+    padding: 5rem 5%;
     max-width: 1400px;
     margin: 0 auto;
     animation: fadeIn 1s ease-out forwards;
